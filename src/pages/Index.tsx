@@ -38,14 +38,27 @@ const Index = () => {
   }, []);
   
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <HeroSection />
-      <HowItWorks />
-      <TrustSection />
-      <CrimeMap />
-      <GetInvolved />
-      <Footer />
+    <div className="min-h-screen bg-white relative">
+      {/* Background Image */}
+      <div className="fixed inset-0 w-full h-full z-0">
+        <img 
+          src="/lovable-uploads/62758b85-523e-4ff8-864d-39087dfd6ed3.png" 
+          alt="City landscape" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-watch-dark/30 backdrop-blur-[2px]"></div>
+      </div>
+      
+      {/* Content */}
+      <div className="relative z-10">
+        <Navbar />
+        <HeroSection />
+        <HowItWorks />
+        <TrustSection />
+        <CrimeMap />
+        <GetInvolved />
+        <Footer />
+      </div>
     </div>
   );
 };

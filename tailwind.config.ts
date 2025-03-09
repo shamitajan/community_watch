@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,7 +62,6 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Community Watch
 				watch: {
 					red: '#FF3B30',
 					blue: '#0A84FF',
@@ -76,6 +74,9 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'city-view': "url('/lovable-uploads/62758b85-523e-4ff8-864d-39087dfd6ed3.png')",
 			},
 			keyframes: {
 				'accordion-down': {
